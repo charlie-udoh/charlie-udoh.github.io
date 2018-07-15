@@ -87,18 +87,17 @@
   </head>
 
   <body>
-  	<div id="gameContainer"></div>
+	<div id="gameContainer"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
       <div class="spinner"></div>
       <div class="progress"><div class="full"></div></div>
-    </div>
-
+    </div>	
   </body>
 
   <script src="Build/UnityLoader.js"></script>
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/XpressRunner_20180709.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/XpressRunner_20180715.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
